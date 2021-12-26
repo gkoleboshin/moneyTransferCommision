@@ -5,7 +5,7 @@ const val THIRD_TYPE_COUNT = "VK Pay"
 fun main(args: Array<String>) {
     val amountTransfer = 70_000
     var amountTransferCount = 0
-    val commision =moneyTransfer(SECOND_TYPE_COUNT, amountTransferCount,amountTransfer)
+    val commision =moneyTransfer(FIRST_TYPE_COUNT, amountTransferCount,amountTransfer)
     println("Коммисия составляет $commision копеек")
 }
 
