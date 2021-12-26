@@ -23,7 +23,7 @@ class MainKtTest {
     @Test
     fun should_culation_of_the_commission_for_visa_type_if_commision_the_bigger_then_35_rubls(){
         val amountTransfer = 750_000
-        val expectedCommision = 5_625
+        val expectedCommision = 5_621
         val actualCommision = moneyTransfer(SECOND_TYPE_COUNT, transferAmount = amountTransfer)
         assertEquals(expectedCommision,actualCommision)
     }
@@ -31,14 +31,14 @@ class MainKtTest {
     @Test
     fun should_culation_of_the_commission_for_visa_type_if_commision_is_35_rubls(){
         val amountTransfer = 1_000
-        val expectedCommision = 3_500
+        val expectedCommision = 3_501
         val actualCommision = moneyTransfer(SECOND_TYPE_COUNT, transferAmount = amountTransfer)
         assertEquals(expectedCommision,actualCommision)
     }
 
     @Test
     fun should_culation_of_the_commission_for_VK_Pay_type(){
-        val amountTransfer = 1_000
+        val amountTransfer = 1_001
         val expectedCommision = 0
         val actualCommision = moneyTransfer(THIRD_TYPE_COUNT, transferAmount = amountTransfer)
         assertEquals(expectedCommision,actualCommision)
